@@ -20,8 +20,7 @@ public class StackQueue {
             switch (choice) {
                 case 1:
                     System.out.println("Enter the Data to Push in Stack : ");
-                    int dataFirst = sc.nextInt();
-                    linkedList.insertFirst(dataFirst);
+                    linkedList.insertFirst(sc.nextInt());
                     break;
                 case 2:
                     linkedList.peakPop();
@@ -30,12 +29,15 @@ public class StackQueue {
                     linkedList.showLinkedList();
                     break;
                 case 4:
+                    System.out.println("Enter the Data to Enqueue in Queue : ");
+                    linkedList.insertLast(sc.nextInt());
                     break;
                 case 5:
                     break;
                 case 6:
+                    linkedList.showLinkedList();
                     break;
             }
-        }while(choice != 6);
+        }while(choice != 7);
     }
 }
